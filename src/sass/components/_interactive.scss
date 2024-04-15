@@ -1,0 +1,61 @@
+@use 'variables';
+
+.interactive {
+    display: grid;
+    gap: 3rem;
+    text-align: center;
+    font-family: variables.$Josefin-Sans;
+    img {
+        margin: auto;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: .9rem;
+        padding: 0 1.5rem;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    &__paragraph {
+        font-size: .95rem;
+        font-family: variables.$Alata;
+        color: variables.$Very-Dark-Gray;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .interactive {
+        display: flex;
+        gap: 0;
+        text-align: start;
+        font-family: variables.$Josefin-Sans;
+        position: relative;
+        img {
+            margin: none;
+        }
+        &__text {
+            position: absolute;
+            bottom: -1rem;
+            right: -1rem;
+            background-color: variables.$White;
+            max-width: 440px;
+            display: flex;
+            gap: 1.75rem;
+            padding: 8% 1.5% 1.5% 8%;
+            text-align: start;
+        }
+        &__title {
+            text-transform: uppercase;
+            font-size: 3.3vw;
+        }
+        &__paragraph {
+            font-size: clamp(.8rem, 1.02vw, 1.02vw);
+            padding-right: .9rem;
+            font-family: variables.$Josefin-Sans;
+        }
+    }
+}
