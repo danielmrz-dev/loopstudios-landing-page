@@ -221,7 +221,7 @@ video {
     margin: 8rem 0 5rem;
     min-width: 585px;
     max-width: 52.5%;
-    line-height: 75px;
+    line-height: 73px;
     padding: 2rem 2rem 1.25rem 2rem;
     z-index: 1;
   }
@@ -497,7 +497,7 @@ video {
     flex-direction: column;
     align-items: normal;
     gap: 11.5rem;
-    max-width: 1210px;
+    max-width: 1110px;
   }
 }
 @media screen and (min-width: 1440px) {
