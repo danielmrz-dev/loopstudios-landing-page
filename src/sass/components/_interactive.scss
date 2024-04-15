@@ -50,10 +50,10 @@
         }
         &__title {
             text-transform: uppercase;
-            font-size: 3.3vw;
+            font-size: clamp(1rem, 3.3vw, 3rem);
         }
         &__paragraph {
-            font-size: clamp(.8rem, 1.02vw, 1.02vw);
+            font-size: clamp(.8rem, 1.02vw, 50px);
             padding-right: .9rem;
             font-family: variables.$Josefin-Sans;
         }

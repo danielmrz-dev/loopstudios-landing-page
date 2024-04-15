@@ -277,10 +277,10 @@ video {
   }
   .interactive__title, .grid__title {
     text-transform: uppercase;
-    font-size: 3.3vw;
+    font-size: clamp(1rem, 3.3vw, 3rem);
   }
   .interactive__paragraph {
-    font-size: clamp(0.8rem, 1.02vw, 1.02vw);
+    font-size: clamp(0.8rem, 1.02vw, 50px);
     padding-right: 0.9rem;
     font-family: "Josefin Sans", sans-serif;
   }
@@ -497,5 +497,11 @@ video {
     flex-direction: column;
     align-items: normal;
     gap: 11.5rem;
+    max-width: 1210px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    margin: 10rem auto 12rem;
   }
 }/*# sourceMappingURL=style.css.map */
